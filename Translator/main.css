@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,500&family=Poppins:ital@1&family=Smokum&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Playfair Display', serif;
+}
+ body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 15px;
+    min-height: 100vh;
+    background-image: url('https://source.unsplash.com/1600x900/?map');
+    background-size: cover;
+ }
+ .container{
+     max-width: 680px;
+     width: 100%;
+     padding: 30px;
+     background-color: rgb(225, 222, 168);
+     border-radius: 30px;
+     opacity: 0.9;
+ }
+ .wrapper{
+     border-radius: 10px;
+     border: 1px solid black;
+ }
+ .wrapper .text-input{
+     display: flex;
+     border-bottom: 1px solid black;
+ }
+ .text-input .to-text{
+     border-left: 1px solid black;
+     border-radius: 0px;
+ }
+ .text-input textarea{
+    border: none;
+    background: none;
+    outline: none;
+    resize: none;
+    height: 250px;
+    width: 100%;
+    font-size: 20px;
+    border-radius: 15px;
+    padding: 15px;
+ }
+ .text-input textarea::placeholder{
+     color: black;
+ }
+ .controls, li, .icons, .icons i{
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+ }
+ .controls{
+    list-style: none;
+    padding: 10px 15px;
+ }
+ .controls .row .icons i{
+    width: 50px;
+    color: rgb(117, 117, 153);
+    font-size: 14px;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+    justify-content: center;
+  }
+ .controls .row.from .icons{
+    padding-right: 15px;
+    border-right: 1px solid black ;
+}
+ .controls .row.to .icons{
+     padding-left: 15px;
+     border-left: 1px solid black ;
+ }
+ .controls .row .icons{
+     width: 35%;
+ }
+ .controls .icons i{
+     font-size: 20px;
+     width: 50px;
+     cursor: pointer;
+     color: rgb(37, 37, 48);
+     justify-content: center;
+
+ }
+.controls .row select{
+    border: none;
+    background: none;
+    outline: none;
+    font-size: 20px;
+    padding-left: 10px;
+}
+.controls .exchange{
+    color: rgb(148, 138, 148);
+    cursor: pointer;
+    font-size: 16px;
+    transition: transform 0.2s ease-in;
+}
+.controls i:active{
+    transform: scale(0.8);
+}
+.container button{
+    width: 100%;
+    padding: 15px;
+    border: none;
+    outline: none;
+    color:whitesmoke;
+    cursor: pointer;
+    margin-top: 15px;
+    font-size: 16px;
+    border-radius: 15px;
+    background: darkblue;
+}
+@media (max-width: 650px){
+    .container{
+      padding: 20px;
+    }
+    .wrapper .text-input{
+      flex-direction: column;
+    }
+    .text-input .to-text{
+      border-left: 0px;
+      border-top: 1px solid black;
+    }
+    .text-input textarea{
+      height: 200px;
+    }
+    .controls .row .icons{
+        display: none;
+    }
+    .container button{
+      padding: 13px;
+      font-size: 16px;
+    }
+    .controls .row select{
+        font-size: 16px;
+      }
+      .controls .exchange{
+        font-size: 14px;
+      }
+   }
+  
