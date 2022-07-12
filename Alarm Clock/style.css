@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,500&family=Smokum&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'ubuntu', 'sans-serif';
+}
+body, .wrapper, .content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+body{
+    min-height: 100vh;
+    background-color: rgb(89, 92, 106);
+    background-image:url('https://images.unsplash.com/photo-1501139083538-0139583c060f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80') ;
+    background-size: 100%;
+}
+.wrapper{
+    background-color: silver;
+    border-radius: 20px;
+    flex-direction: column;
+    width: 450px;
+    padding: 35px 35px 35px;
+}
+.wrapper img{
+    max-width: 150px;
+}
+.wrapper h1{
+    font-size: 50px;
+    font-weight: 600;
+    margin: 25px 0;
+}
+.wrapper .content{
+    width: 100%;
+    justify-content: space-between;
+}
+.wrapper .content.disble{
+    opacity: 0.5;
+    pointer-events: none;
+}
+.content .column{
+    border: 1px solid ;
+    border-radius: 5px;
+    padding: 0 10px;
+    width: 30%;
+}
+.column select{
+    outline: none;
+    border: none;
+    height: 35px;
+    width: 100%;
+    font-size: 20px;
+    background-color: silver;
+}
+.wrapper button{
+    outline: none;
+    border: none;
+    cursor: pointer;
+    color: white;
+    width: 100%;
+    margin-top: 13px;
+    font-size: 20px;
+    padding: 15px 0;
+    border-radius: 10px;
+    background-color: rgb(96, 121, 41);
+}
